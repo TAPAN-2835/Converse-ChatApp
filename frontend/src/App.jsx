@@ -36,7 +36,7 @@ const App = () => {
     );
 
   // Show footer only on login and signup pages
-  const showFooter = ["/login", "/signup"].includes(location.pathname);
+  const showFooter = ["/login", "/signup", "/settings"].includes(location.pathname);
 
   return (
     <div data-theme={theme} className="flex flex-col min-h-screen">
