@@ -54,7 +54,7 @@ export default function AuthImagePattern({ title, subtitle }) {
   return (
     <div className="hidden lg:flex items-center justify-center bg-base-200 p-12">
       <div className="max-w-md text-center">
-        <div className="grid grid-cols-3 gap-3 mb-8">
+        <div className="grid grid-cols-3 gap-2 mb-3 mt-8">
           {boxStyles.map((style, i) => {
             const isActive =
               (phase === "even" && i % 2 === 0) ||
@@ -66,6 +66,7 @@ export default function AuthImagePattern({ title, subtitle }) {
                 key={i}
                 className={`
                   relative aspect-square rounded-2xl overflow-hidden
+                  
                   ${style} 
                   ${isActive ? "animate-pulse brightness-125" : "brightness-75"}
                   transition-all duration-500
