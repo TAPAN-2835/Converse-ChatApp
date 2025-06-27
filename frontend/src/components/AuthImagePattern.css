@@ -1,0 +1,44 @@
+/* Base pattern overlay style with controlled opacity */
+[class*="pattern-"] {
+  opacity: 0.35;  /* slightly brighter than before, but not too harsh */
+  pointer-events: none;
+}
+
+/* Dots pattern */
+.pattern-dots {
+  background-image: radial-gradient(white 20%, transparent 20%);
+  background-size: 40px 40px;
+}
+
+/* Lines pattern */
+.pattern-lines {
+  background-image: repeating-linear-gradient(
+    45deg,
+    white,
+    white 3px,
+    transparent 3px,
+    transparent 15px
+  );
+}
+
+/* Grid pattern */
+.pattern-grid {
+  background-image:
+    repeating-linear-gradient(white, white 3px, transparent 3px, transparent 20px),
+    repeating-linear-gradient(90deg, white, white 3px, transparent 3px, transparent 20px);
+}
+
+/* Cross pattern (diagonal criss-cross) */
+.pattern-cross {
+  background-image:
+    repeating-linear-gradient(45deg, white, white 3px, transparent 3px, transparent 20px),
+    repeating-linear-gradient(-45deg, white, white 3px, transparent 3px, transparent 20px);
+}
+
+/* Swirl pattern using conic-gradient for spiral-like illusion */
+.pattern-swirl {
+  background: repeating-conic-gradient(
+    white 0deg 20deg,
+    transparent 20deg 40deg
+  );
+}
